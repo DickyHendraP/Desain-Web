@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+    font-size: 12px;
+    font-family: fantasy;
+}
+p.dotted {border-style: dotted; border-color: mediumslateblue;}
+p.dashed {border-style: dashed; border-top-color: mediumspringgreen;}
+p.solid {border-style: solid; border-bottom-color: mediumvioletred;}
+p.double {border-style: double; border-left-color: navy;}
+p.groove {border-style: groove; border-color: orchid;}
+p.ridge {border-style: ridge; border-color: purple;}
+p.inset {border-style: inset; border-collapse: unset;}
+p.outset {border-style: outset;}
+p.none  {border-style: none;}
