@@ -1,0 +1,33 @@
+h1 {
+    font-size: 20px;
+    font-style: inherit;
+    text-align: center;
+    font-family: fantasy;
+}
+
+body {
+    font-family: courier New;
+    font-size: 18px;
+    background-color: rgb(115, 115, 236);
+    text-align: justify;
+}
+
+p {
+    color: rgb(255, 13, 158);
+}
+
+.tabelisi {
+    padding: 20px;
+    width: fit-content;
+    color: rgb(148, 3, 3);
+    margin: 10px;
+    background: lightseagreen;
+}
+
+#tabelisi2 {
+    padding: 40px;
+    width: fit-content;
+    color: rgb(152, 201, 152);
+    margin: 10px;
+    background: maroon;
+}
