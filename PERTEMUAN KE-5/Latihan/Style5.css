@@ -1,0 +1,11 @@
+.gambarpanda {
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+    image-orientation: from-image;
+}
+p {
+    text-align: justify;
+    font-size: 16px;
+    font-family: monospace;
+}
