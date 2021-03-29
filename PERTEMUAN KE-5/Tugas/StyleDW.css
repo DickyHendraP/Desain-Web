@@ -1,0 +1,104 @@
+.header {
+    padding: 50px; 
+    text-align: center;
+    background: greenyellow;
+    color: white;
+}
+
+.gabungan {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hamparan {
+    position: absolute;
+    bottom: 0;
+    background: red;
+    background: black;
+    color: blue;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 10px;
+    padding: 8px;
+    text-align: center;
+}
+
+.gabungan:hover .hamparan{
+    opacity: 1;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 150%;
+    float: none;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.navbar {
+    overflow: hidden;
+    background: darkcyan;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a.right {
+    float: right;
+}
+.navbar a:hover {
+    background-color: rgb(255, 230, 0);
+    color: black;
+}
+
+{
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side {
+    flex: 30%;
+    background-color: rgb(238, 171, 171);
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-family: courier;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: coral;
+}
+
+.container {
+    width: 100%;
+    background-color: aquamarine;
+}
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+.networking {width: 90%; background-color: green;}
+.program {width: 80%; background-color: blue;}
+.multimedia {width: 65%; background-color: red;}
