@@ -1,0 +1,17 @@
+h1 {
+    font-size: 40px;
+    font-style: inherit;
+    text-align: center;
+    font-family: fantasy;
+}
+
+body {
+    font-family: courier New;
+    font-size: 25px;
+    background-color: rgb(115, 115, 236);
+    text-align: justify;
+}
+
+p {
+    color: rgb(95, 75, 87);
+}
