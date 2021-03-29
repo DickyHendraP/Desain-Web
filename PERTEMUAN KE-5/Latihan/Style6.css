@@ -1,0 +1,27 @@
+ul {
+    overflow: hidden;
+    background-color: blanchedalmond;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 700px;
+}
+li {
+    float: left;
+}
+li a{
+    color: blueviolet;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color:lightseagreen;
+}
+
+img {
+    height: 150px;
+    width: 700px;
+}
