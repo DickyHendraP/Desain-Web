@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratikum 6.1 Belajar CSS</title>
+    <style>
+        .static {
+            left: 100px;
+            position: static;
+            width: 300px;
+            height: 1000px;
+            background: lightblue;
+            color: rgb(20, 77, 20);
+            text-align: center;
+            font-family: tahoma;
+        }
+        .relative{
+            left: 100px;
+            position: relative;
+            width: 400px;
+            height: 200px;
+            background: lightcoral;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        .absolute {
+            left: 350px;
+            top: 150px;
+            position: absolute;
+            width: 300px;
+            height: 100px;
+            background: lightpink;
+            text-align: center;
+            font-family: fantasy;
+        }
+        .fixed {
+            left: 300px;
+            top: 50px;
+            position: fixed;
+            width: 200px;
+            height: 100px;
+            background: lightslategray;
+            text-align: center;
+            font-family: serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="static">
+        ini adalah elemen Position:static. <br>nilai left:100px tidak berpengaruh
+    </div>
+    <div class="relative">
+        ini adalah elemen Position:relative. <br>nilai left:100px mengikuti alur
+    </div>
+    <div class="absolute">
+        ini adalah elemen Position:absolute. <br>bisa diletakkan dimana saja
+    </div>
+    <div class="fixed">
+        ini adalah elemen Position:fixed. <br>posisi tetap walau discrool
+    </div>
+</body>
+</html>
