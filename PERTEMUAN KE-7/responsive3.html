@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animasi Transisi CSS3</title>
+    <style type="text/css">
+        .box{
+            width: 40%;
+            height: 100px;
+            background: rgb(116, 255, 3);
+            border: 2px solid rgb(255, 10, 10);
+            -webkit-transition: width 0.5s ease-in-out;
+            -o-transition: width 0.5s ease-in-out;
+            -moz-transition: width 0.5s ease-in-out;
+            transition: witdh 0.5s ease-in-out;
+        }
+
+        /* Landscape */
+        @media (orientation:landscape){
+            .box{
+                width: 100%;
+                background-color: blueviolet;
+            }
+        }
+        h3{
+            font-family: sans-serif;
+            font-stretch: semi-expanded;
+            text-align: center;
+        }
+        
+        p{
+            font-family: cursive;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body bgcolor="grey">
+    <h3>Transisi CSS3</h3>
+    <div class="box"></div>
+    <p>
+        Ubah Orintasi ke landscape/potrait dan sebaliknya untuk melihat efek transisi Secara Halus
+    </p>
+</body>
+</html>
