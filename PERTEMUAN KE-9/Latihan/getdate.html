@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Objek date</title>
+</head>
+<body>
+    
+    <center>Latihan Objek Date</center>
+
+    <script lang="javascript">
+        var hari = new Array("senin", "selasa", "rabu", "kamis", "jumat", "sabtu", "minggu");
+        var bulan = new Array("jan", "feb", "mar", "apr", "jun", "jul", "agus", "okt", "nov", "des");
+        var t = new Date();
+        var hari_ini = t.getDay();
+        var bulan_ini = t.getMonth();
+        var tahun_ini = t.getFullYear();
+        var menit = t.getMinutes();
+        var jam = t.getHours();
+
+        var hariini = hari[t.getDay()-1];
+        var bln = bulan[t.getMonth()];
+
+        document.write("<hr>");
+        document.write("<center>Sekarang adalah hari " + hari_ini + " tanggal " + tanggal + " bulan " + bulan_ini + " tahun " + tahun_ini + "</center></hr>");
+        document.write("<center>Sekarang adalah hari " + hariini + " tanggal " + tanggal + " bulan " + bln + " tahun " + tahun_ini + "</center></hr>");
+        document.write("<center>Sekarang jam " + jam + " : " + menit + "</center>");        
+    </script>
+</body>
+</html>
