@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Xiomi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logomi.png">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#redmi">Redmi Note 8</a></li>
+                    <li><a href="#price1">Price</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="images/model.png" class="mobile">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="images/camera.png">
+                    <div>
+                        <h1>Camera</h1>
+                        <p>48 MP,8 MP,2 MP,2 MP</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="images/processor.png">
+                    <div>
+                        <h1>Processor</h1>
+                        <p>GPU Adreno 610 Snapdragon 665</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="images/display.png">
+                    <div>
+                        <h1>Display</h1>
+                        <p>IPS LCD Corning Gorilla Glass 5</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="images/battery.png">
+                    <div>
+                        <h1>Batery Life</h1>
+                        <p>Li-Po 4000 mAh Fast charging 18W</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <img src="images/arrow.png" id="upBtn">
+            <h3>Features</h3>
+            <img src="images/arrow.png" id="downBtn">
+        </div>
+
+    </div>
+
+    <div id="price1">
+        <div wrapper>
+            <div class="single-price">
+                <h1>Ram 3/32Gb</h1>
+                <div class="price">
+                    <h2>Rp.1.600.000</h2>
+                </div>
+            </div>
+        </div>
+        <div wrapper>
+            <div class="single-price">
+                <h1>Ram 4/64Gb</h1>
+                <div class="price">
+                    <h2>Rp.2.000.000</h2>
+                </div>
+            </div>
+        </div>
+        <div wrapper>
+            <div class="single-price">
+                <h1>Ram 6/128Gb</h1>
+                <div class="price">
+                    <h2>Rp.2.400.000</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var circle = document.getElementById("circle");
+        var upBtn = document.getElementById("upBtn");
+        var downBtn = document.getElementById("downBtn");
+
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upBtn.onclick = function(){
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+
+        downBtn.onclick = function(){
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+
+
+</body>
+</html>
