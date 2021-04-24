@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mencoba get elemen by class name</title>
+</head>
+<body>
+    <div class="coba">
+        <p>
+            Ikan Hiu adalah sekelompok (superordo Selachimorpha) ikan dengan kerangka tulang rawan yang lengkap 
+            dan tubuh yang ramping. Mereka bernapas dengan menggunakan lima liang insang (kadang-kadang enam atau tujuh, 
+            tergantung pada spesiesnya) di samping, atau dimulai sedikit di belakang, kepalanya. Hiu mempunyai tubuh yang 
+            dilapisi kulit dermal denticles untuk melindungi kulit mereka dari kerusakan, dari parasit, dan untuk menambah dinamika air.
+            Mereka mempunyai beberapa deret gigi yang dapat digantikan.
+        </p>
+    </div>
+    <div class="coba">
+        <p>
+            Paus lebih dekat hubungannya dengan manusia daripada ikan. Paus adalah anggota dari keluarga Cetacea, dan karena itu, meskipun 
+            sepenuhnya penghuni air, paus adalah mamalia, bukan ikan. Hanya ada 83 spesies cetacea di dunia yang diorganisasikan dalam 14 keluarga 
+            dan dua subkategori utama: Paus bergigi (Odontoceti, termasuk paus pembunuh, narwhals, lumba-lumba, dan lumba-lumba) dan paus balin 
+            (Mysticeti, paus bungkuk, dan rorqual). Cetacea bergigi memiliki gigi dan memakan penguin, ikan, dan anjing laut.
+        </p>
+    </div>
+    <script>
+        // variabel
+        var coba=document.getElementsByClassName('coba')
+
+        // isi style coba
+        setInterval(function(){
+            coba[0].style.color='green'
+            coba[1].style.color='blue'
+
+            setTimeout(function(){
+                coba[0].style.color='black'
+            },10000);
+        },5);
+    </script>
+</body>
+</html>
