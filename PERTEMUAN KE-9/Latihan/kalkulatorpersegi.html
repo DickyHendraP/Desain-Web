@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+<body>
+    
+    <!-- form untuk menampilkan nilai -->
+    <form name="dform">
+        <h1>Masukkan angka</h1>
+        <pre>
+            <!-- dibuat menjorok ke kiri karena agar berada di kiri, efek dari tag pre -->
+            panjang : <input type="text" name="panjang"> 
+            <!-- dibuat menjorok ke kiri karena agar berada di kiri, efek dari tag pre -->
+            lebar   : <input type="text" name="lebar">
+        </pre>
+        <br>
+        <input type="button" value="hitung" onclick="luas()">
+        <input type="reset" value="reset">
+    </form>
+
+    <script>
+        function luas(){
+            var panjang = parseFloat(document.dform.panjang.value);
+            var lebar = parseFloat(document.dform.lebar.value);
+
+            if (isiNaN(panjang))
+            panjang = 5;
+            if (isiNaN(lebar))
+            lebar = 5;
+
+            var luas = panjang * lebar;
+            alert(' Hasilnya adalah ' + luas);
+        }
+    </script>
+</body>
+</html>
